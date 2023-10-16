@@ -38,6 +38,8 @@ class DashboardRouter: DashboardRouterProtocol {
     
     func showPopup() {
         let popupTodo = PopupTodo()
+        popupTodo.modalPresentationStyle = .custom
+        popupTodo.modalTransitionStyle = .coverVertical
         entry?.present(popupTodo, animated: true, completion: nil)
     }
 }

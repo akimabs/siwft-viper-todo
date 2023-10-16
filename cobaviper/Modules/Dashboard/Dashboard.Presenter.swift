@@ -6,11 +6,13 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol DashboardPresenterProtocol{
     var view: DashboardProtocol? {get set}
     var interactor: DashboardInteractorProtocol? {get set}
     var router: DashboardRouterProtocol? {get set}
+    var dataTodo:PublishSubject<[TDataTodo]> {get set}
     
     func addDataTodo(dataPayloadTodo: TDataTodo)
     func updateDataView(dataUser: DataUser?)
@@ -19,6 +21,8 @@ protocol DashboardPresenterProtocol{
 }
 
 class DashboardPresenter: DashboardPresenterProtocol {
+    // MARK: - State
+    var dataTodo = PublishSubject<[TDataTodo]>()
     
     // MARK: - Property
     var view: DashboardProtocol?

@@ -18,11 +18,11 @@
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <viewController id="PWv-4V-Ses">
             <view key="view" contentMode="scaleToFill" id="gnS-Mx-13Q">
-                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                <rect key="frame" x="0.0" y="0.0" width="377" height="214"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YhQ-4i-SVK">
-                        <rect key="frame" x="0.0" y="281" width="393" height="214"/>
+                        <rect key="frame" x="-9" y="0.0" width="393" height="214"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOH-SF-1Gj">
@@ -50,7 +50,8 @@
                 </subviews>
                 <viewLayoutGuide key="safeArea" id="ewC-6T-7ui"/>
             </view>
-            <point key="canvasLocation" x="80.152671755725194" y="27.464788732394368"/>
+            <size key="freeformSize" width="377" height="214"/>
+            <point key="canvasLocation" x="17.557251908396946" y="83.098591549295776"/>
         </viewController>
     </objects>
     <resources>

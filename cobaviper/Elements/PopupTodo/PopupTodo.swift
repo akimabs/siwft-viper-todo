@@ -45,7 +45,7 @@ class PopupTodo: UIViewController,PopupTodoDelegate {
         
         buttonTask.rx.tap.subscribe { [weak self] _ in
             guard let self = self else { return }
-            let payloadTask = TDataTodo(description: self.taskDescriptionValue)
+            _ = TDataTodo(description: self.taskDescriptionValue)
             self.buttonTask?.setEnable(isEnabled: false)
             delegate?.didAddTask(description: self.taskDescriptionValue)
             self.dismiss(animated: true, completion: nil)

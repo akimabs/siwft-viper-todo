@@ -11,18 +11,15 @@ import RxSwift
 protocol DashboardInteractorProtocol {
     var presenter: DashboardPresenterProtocol? {get set}
     var dataUser: DataUser? {get set}
-    var dataTodo: BehaviorSubject<[TDataTodo]> {get set}
     
     func getPayloadFromLogin()
     func storeTodo(dataTodoPayload: TDataTodo)
 }
 
 class DashboardInteractor: DashboardInteractorProtocol {
-    // MARK: - State
-    var dataUser: DataUser?
-    var dataTodo = BehaviorSubject<[TDataTodo]>(value: [])
     // MARK: - Property
     var presenter: DashboardPresenterProtocol?
+    var dataUser: DataUser?
     
     func getPayloadFromLogin(){
         presenter?.updateDataView(dataUser: dataUser)
@@ -31,6 +28,6 @@ class DashboardInteractor: DashboardInteractorProtocol {
     func storeTodo(dataTodoPayload: TDataTodo){
         var tmpArray: [TDataTodo] = []
         tmpArray.append(dataTodoPayload)
-        dataTodo.onNext(tmpArray)
+        presenter?.dataTodo.onNext(tmpArray)
     }
 }

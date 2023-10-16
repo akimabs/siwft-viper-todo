@@ -40,13 +40,11 @@ class Dashboard: UIViewController, DashboardProtocol, PopupTodoDelegate {
         }.disposed(by: bag)
         
         tableTaskTodo.dataSource = self
-        self.presenter?.interactor?.dataTodo
-              .asObservable()
-              .subscribe(onNext: { [weak self] tasks in
-                  self?.tasks += tasks
-                  self?.tableTaskTodo.reloadData()
-              })
-              .disposed(by: bag)
+        self.presenter?.dataTodo.subscribe(onNext: { [weak self] tasks in
+            guard let self = self else { return }
+            self.tasks += tasks
+            self.tableTaskTodo.reloadData()
+        }).disposed(by: bag)
     }
     
     func showPopup(){

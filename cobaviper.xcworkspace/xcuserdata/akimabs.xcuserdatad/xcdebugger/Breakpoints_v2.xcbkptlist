@@ -14,8 +14,8 @@
             filePath = "cobaviper/Modules/Dashboard/Dashboard.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "update(with:)"
             landmarkType = "7">
             <Locations>
@@ -65,6 +65,22 @@
             startingLineNumber = "48"
             endingLineNumber = "48"
             landmarkName = "setupListener()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1CC02133-39E0-4F5E-B1B6-7C91F18F97DA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "cobaviper/Modules/Dashboard/Dashboard.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "setupCLick()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
