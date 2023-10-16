@@ -69,6 +69,10 @@ Please be sure to have `macos, xcode, cocoapods` installation to run this app
 
 To start developing using viper architecture you can follow this step:
 
+<p align="center">
+<img src="https://github.com/akimabs/siwft-viper-todo/blob/main/img/viper-explain.png" width="300"/>
+</p>
+
 1. V (View): YourScreen.swift
    Manages UI components.
    Sends user actions to the Presenter `and check the view must create the xib file`.
