@@ -17,7 +17,12 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#usage">Usage</a>
+     <ul>
+        <li><a href="#viper">Viper</a></li>
+        <li><a href="#contributing">Contributing</a></li>
+      </ul>
+    </li>
   </ol>
 </details>
 
@@ -70,7 +75,7 @@ Please be sure to have `macos, xcode, cocoapods` installation to run this app
 To start developing using viper architecture you can follow this step:
 
 <p align="center">
-<img src="https://github.com/akimabs/siwft-viper-todo/blob/main/img/viper-explain.png" width="900"/>
+<img src="https://github.com/akimabs/siwft-viper-todo/blob/main/img/viper-explain.png" width="900" height="300"/>
 </p>
 
 1. V (View): YourScreen.swift
