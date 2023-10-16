@@ -30,7 +30,7 @@
 
 ## About The Project
 
-To welcome hacktoberfest we provide to create this repository to make you can contribute in hacktober fest with happy and make you more creative.
+A example how to create iOS App using swift and implement a VIPER architecture.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
